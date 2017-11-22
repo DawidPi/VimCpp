@@ -7,6 +7,8 @@ set expandtab
 
 set textwidth=120
 
+set hidden
+
 syntax on
 
 set number
@@ -18,10 +20,12 @@ set comments=sl:/*,mb:\ *,elx:\ */
 set grepprg=ack
 set nocompatible "they told me this is good. I trust them
 
+let mapleader=","
 map <C-e> :NERDTreeToggle<CR>
 map <C-b> :GtagsCursor<CR>
 map <C-n> :cn<CR>
 map <C-m> :cp<CR>
+map <leader>nt :NERDTreeFind<CR>
 
 set tags=./tags;,tags
 
