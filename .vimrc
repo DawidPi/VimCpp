@@ -20,12 +20,14 @@ set comments=sl:/*,mb:\ *,elx:\ */
 set grepprg=ack
 set nocompatible "they told me this is good. I trust them
 
-let mapleader=","
 map <C-e> :NERDTreeToggle<CR>
 map <C-b> :GtagsCursor<CR>
 map <C-n> :cn<CR>
 map <C-m> :cp<CR>
 map <leader>nt :NERDTreeFind<CR>
+map <leader>t :TagbarToggle<CR>
+
+let g:rtagsUseLocationList = 0
 
 set tags=./tags;,tags
 
@@ -36,5 +38,8 @@ Plug 'scrooloose/nerdtree'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'kien/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
+Plug 'lyuts/vim-rtags'
+Plug 'Valloric/YouCompleteMe'
+Plug 'majutsushi/tagbar'
 
 call plug#end()
