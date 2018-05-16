@@ -19,6 +19,7 @@ set comments=sl:/*,mb:\ *,elx:\ */
 
 set grepprg=ack
 set nocompatible "they told me this is good. I trust them
+set backspace=indent,eol,start
 
 map <C-e> :NERDTreeToggle<CR>
 map <C-b> :GtagsCursor<CR>
