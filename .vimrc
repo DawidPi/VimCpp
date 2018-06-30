@@ -45,5 +45,6 @@ Plug 'lyuts/vim-rtags'
 Plug 'Valloric/YouCompleteMe'
 Plug 'majutsushi/tagbar'
 Plug 'Valloric/ListToggle'
+Plug 'dracula/vim'
 
 call plug#end()
