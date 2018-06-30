@@ -32,6 +32,12 @@ map <leader>f :YcmCompleter FixIt<CR>
 let g:lt_quickfix_list_toggle_map = '<leader>l'
 let g:rtagsUseLocationList = 0
 
+" for issues with NERDTree
+let g:NERDTreeDirArrows = 1
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
+let g:NERDTreeGlyphReadOnly = "RO"
+
 set tags=./tags;,tags
 
 " requires vim-plug
